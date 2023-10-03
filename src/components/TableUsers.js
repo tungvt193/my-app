@@ -26,6 +26,10 @@ function TableUser() {
 
   return (
     <>
+      <div className='my-3 d-flex justify-content-between'>
+          <h3>List User</h3>
+          <button onClick={handleShow} className='btn btn-success float-right'>Add User</button>
+        </div>
       <Table striped bordered hover>
         <thead>
           <tr>
@@ -46,7 +50,7 @@ function TableUser() {
           })}
         </tbody>
       </Table>
-      <Paginate handlePageClick={handlePageClick} pageCount={pageCount}/>
+      <Paginate handlePageClick={handlePageClick} pageCount={pageCount}/>      
     </>
   );
 }
